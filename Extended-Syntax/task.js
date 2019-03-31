@@ -11,8 +11,25 @@ function calculateQuadraticEquation(){
 }
 
 function getResult(a,b,c){
-    // код для задачи №1 писать здесь
-    //return x;
+
+    "use strict";
+
+    let a = 2, b = 3, c = 4;
+     
+      let x = (a ** a + c - b);
+      if (x < 0){
+        console.log("Корня нет");
+      }
+      else if (x = 0){
+        console.log(x);
+      }
+      else (x > 0);
+        console.log(x);
+      return [x];
+    }
+    
+    getResult();
+
 }
 
 function calculateDrinkTask(){
@@ -26,6 +43,28 @@ function askDrink(name,dateOfBirthday){
     // код для задачи №2 писать здесь
     //console.log(result)
     //return result;
+    let name = "Вася";
+let dateOfBirthday = 2000;
+
+function askDrink(){
+  name;
+  dateOfBirthday;
+}
+
+function getFullYear(){
+  let result = new Date().getFullYear();
+  if (result - dateOfBirthday >= 18) {
+    console.log("Не желаете ли олд-фэшн, " + name + "?");
+  }
+  else{
+    (result - dateOfBirthday < 18);
+       console.log("Сожалею, " + name + " , но я не могу вам продать алкоголь. Зато могу предложить вам замечательный клюквенный компот!");
+  return result;
+  }
+}
+
+getFullYear();
+
 }
 
 function calculateAverageRating(){
@@ -35,6 +74,15 @@ function calculateAverageRating(){
 }
 
 function getAverageMark(marks){
-    // код для задачи №3 писать здесь
-    //return averageMark;
-}
+ 
+        var marks = [5, 5, 5, 5, 5, 5, 5, 5];
+        var averageMark = 0;
+        for (var i = 0; i <= 4; i++) 
+        {
+          averageMark += marks[i] / 5;
+        }
+        return averageMark; 
+    }
+    
+     getAverageMark();
+
